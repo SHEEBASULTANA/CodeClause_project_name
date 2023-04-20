@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26f547aef1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Intrests">Intrests</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CSE student</p>
+                <h1> Hi, I'm <span>Sheeba</span> <br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!----------ab0ut---------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Enthusiastic fresher seeking an
+                        opportunity in the organization to
+                        experience different working cultures
+                        and technologies to explore as many
+                        new things as possible and to
+                        incorporate my skills and training to
+                        help the company grow.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab id="Skills">
+                            <ul>
+                                <li><span>languages</span><br>C, Python, Java</li>
+                                <li><span>Web Development</span><br>HTML, CSS</li>
+                                <li><span>Key subjects</span><br>Operating systems, Data structures, computer networks</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Projects">
+                            <ul>
+                                <li><span>Smart storage structures </span><br>An IOT device which detects and monitors strorage structures</li>
+                                <li><span>portfolio website</span><br>Basic website using HTML and CSS</li>
+                                <li><span>Research</span><br>done basic research in Geo-fensing technology</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2021-2025:Current</span><br>pursuing Btech in Vr Siddhatha engineering college, Vijayawada</li>
+                                <li><span>2019-2021</span><br>completed my intermediate from Sri Chaitanaya college with 95.5%</li>
+                                <li><span>2019</span><br>completed my 10th class from Sri chaitanya techno school with 10 CGPA</li>
+                            </ul>
+                        </div>
+                        
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!--interests----------------------------------------------->
+    <div id="Intrests">
+        <div class="container">
+            <h1 class="sub-title">My intrests</h1>
+            <div class="Intrests-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>my top most intrest is web design. By this we can inculcate creativity and show the world the real meaning of designing.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App design</h2>
+                    <p>my next most intrest is App design. I wanna build apps in medical field we which will be very helpfull to the society.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-algolia"></i>
+                    <h2>AI&ML</h2>
+                    <p>I reyally wanna prove myself in Ai&Ml field and create new web and app designs which include Ai&Ml technoly</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--------------------------portfolio-------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My short term goals</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>As i said above i wanna build a app.</p>
+                        <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>As i said above i wanna build a music app which will be fascinating for every age group.</p>
+                        <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>This is also one of my upcoming work, i.e online shopping app, i wanna make an app like amazon and wanna see it trending in the world with new features.</p>
+
+                        <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+    <!------------------contact---------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email"required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-write">
+            <p>Copywrite @ sheeba.Made with smartwork<i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwqagLPM5RgcSoZD_jG5CopNtHY5jEdMKvdDG-niaKkseSlbvgq9UBHBdjkKyMdHB9BTQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
